@@ -95,6 +95,10 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: ocean
 
+theme_config:
+  ocean:
+    brand: /images/sleepyants.svg
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
