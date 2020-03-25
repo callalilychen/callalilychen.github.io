@@ -9,6 +9,7 @@ branches:
 script:
   - hexo generate # generate static files
 after_script:
+  - cp readme.md ./public
   - cd ./public
   - git init
   - git config user.name "callalilychen"
