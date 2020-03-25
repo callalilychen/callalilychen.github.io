@@ -1,1 +1,1 @@
-go to [my block](callalilychen.github.io)
+go to [my blog](https://callalilychen.github.io)
