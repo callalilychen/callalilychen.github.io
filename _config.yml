@@ -41,7 +41,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -98,6 +98,9 @@ theme: ocean
 theme_config:
   ocean:
     brand: /images/sleepyants.svg
+  brand: /images/sleepyants.svg
+  favicon: /images/favicon.ico
+  toc: false
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -119,3 +122,22 @@ feed:
     content_limit: 140
     content_limit_delim: ' '
     order_by: -date	
+
+lazyload:
+  enable: true 
+  onlypost: true 
+  loadingImg: # eg ./images/loading.gif
+
+# <div class="image-container" data-type="content-image" data-size="100x100"><img src="xxx" data-original="yyy"></img></div>'
+# imgSrcIn: dataOriginal if you install hexo-lazyload-image, or src as default
+# dataType is a presered attr. It is usless now but you can custum in your own js with this unique selector.
+# className you can custom the class for div, in your own css file as you want.
+# imageFileBaseDir is the base directory where hexo-photoswipe would find images, eg, source/_posts/my-first-post/cover.jpg. The final pattern is {imageFileBaseDir}/{YourPostTitle}/{imageName}.{imageFormat}.
+photoswipe:
+  enable: true 
+  imageFileBaseDir: source/
+  imgSrcIn: dataOriginal
+  className: image-container
+  dataType: content-image
+
+github: callalilychen/callalilychen.github.io
